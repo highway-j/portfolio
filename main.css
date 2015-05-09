@@ -31,10 +31,22 @@ h1 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.summary h1 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 1.8em;
+  line-height: 0;
+  font-variant: small-caps;
+}
+
 p {
   font-size: 1.1em;
 }
 
+.summary p {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 0;
+}
 .masthead img {
   margin-left: auto;
   margin-right: auto;
@@ -126,11 +138,6 @@ p {
 
 .mastfooter-links a:hover {
   color: blue;
-}
-
-.intro > p, .where > p, .more > p, .mastfooter-intro > p {
-  font-weight: 300px;
-  letter-spacing: 0.05em;
 }
 
 .more h2 {
