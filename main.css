@@ -6,6 +6,13 @@ body {
 
 .grid {
   display: inline-block;
+  position: relative;
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 [class*='col-'] {
@@ -14,7 +21,7 @@ body {
 
 .col-2-3 {
   width: 66.66%;
-  vertical-align: middle;
+  padding-top: 2em;
 }
 
 .col-1-3 {
