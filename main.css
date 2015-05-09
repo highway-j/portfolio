@@ -161,6 +161,38 @@ p {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 1197px) {
+  .summary h1 {
+    font-size: 1.3em;
+  }
+  .summary p {
+    font-size: .6em;
+  }
+  .intro, .where, .more{
+    margin: 2em auto 0 auto;
+    max-width: 24em;
+  }
+  .col-2-3 {
+    padding: 0;
+  }
+}
+
+ @media only screen and (max-width: 875px) {
+  .col-2-3 {
+    width: 100%;
+    padding-top: 2em;
+  }
+
+  .col-1-3 {
+    width: 100%;
+  }
+
+  .col-1-3 img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   .masthead-heading {
     font-size: 3em;
