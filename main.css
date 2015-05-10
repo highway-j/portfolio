@@ -78,9 +78,10 @@ p {
   border-top: solid 1em #000;
 }
 
-.intro, .where, .more{
+.intro {
   margin: 2em auto 2em auto;
   max-width: 38em;
+  top: 50%;
 }
 
 .quote{
