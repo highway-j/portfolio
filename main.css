@@ -229,6 +229,10 @@ p {
   .portfolio h1 {
     font-size: 1.8em;
   }
+
+  .content ul li img {
+    width: 75px;
+  }
 }
 
 
