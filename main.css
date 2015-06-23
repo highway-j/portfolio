@@ -337,6 +337,10 @@ ul.skills li a:active {
   float: left;
 }
 
+.skillsDetails li {
+  font-size: 1.28em;
+}
+
 .skillsDetails p{
   font-family: "Oswald", sans-serif;
   font-size: 1.25em;
@@ -529,7 +533,7 @@ a.carousel-control {
 
   .skillsDetails{
     margin-top: -25px;
-    width: 34%;
+    width: 31%;
   }
 
   .skillsImage {
@@ -539,7 +543,7 @@ a.carousel-control {
   }
 
   .col-2-3 li{
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   ul.skills li{
@@ -551,7 +555,7 @@ a.carousel-control {
   }
 }
 
- @media only screen and (max-width: 960px) {
+ @media only screen and (max-width: 1055px) {
   .skillsImage img{
   margin-top: 40px;
   margin-bottom: 20px;
@@ -615,14 +619,14 @@ a.carousel-control {
   }
 
   .skillsImage {
-    width: 100%;
     height: auto;
+    width: 40%;
     margin-bottom: -47px;
   }
 
   .skillsDetails {
-    padding-top: 0;
-    width: 100%;
+    width: 40%;
+    padding-top: 20px;
     padding-bottom: 10px;
   }
 
@@ -639,6 +643,11 @@ a.carousel-control {
   }
 }
 
+@media only screen and (max-width: 488px) {
+  ul.skills li {
+    padding: 0 2px;
+  }
+}
 
 
 
