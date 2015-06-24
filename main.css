@@ -633,6 +633,10 @@ a.carousel-control {
     padding-bottom: 10px;
   }
 
+  ul.skills {
+  margin-top: 10px;
+  }
+
   ul.skills li a {
   font-size: 1em;
   }
