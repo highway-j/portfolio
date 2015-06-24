@@ -40,19 +40,13 @@ function scrollToAnchor(aid){
     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
 }
 
-$("#downWeGo").click(function() {
-   scrollToAnchor('downWeGo');
-	});
-
-
-if ($(window).width() < 1055) {
-	$("#downWeGo").click(function() {
-   scrollToAnchor('downWeWent');
-	});	
+$("#downWeGo").click(function(){
+	if ($(window).width() < 1055) {
+   		scrollToAnchor('downWeWent');
 } else {
-	$("#downWeGo").click(function() {
    scrollToAnchor('downWeGo');
-	});
 }
+});
+
 
 });
