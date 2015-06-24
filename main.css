@@ -499,7 +499,8 @@ a.carousel-control {
     .image-load{
         margin: 0;
         width: 100%;
-        height: initial;
+        height: inherit;
+        margin-bottom: -50px;
     }
     .description-load {
         margin: 0;
@@ -507,6 +508,9 @@ a.carousel-control {
     }
     .image-load img {
       margin-top: 0;
+    }
+    #closeThis {
+      margin-top: 35px;
     }
 }
 
