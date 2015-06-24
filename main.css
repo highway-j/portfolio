@@ -499,10 +499,14 @@ a.carousel-control {
     .image-load{
         margin: 0;
         width: 100%;
+        height: initial;
     }
     .description-load {
         margin: 0;
         width: 100%;
+    }
+    .image-load img {
+      margin-top: 0;
     }
 }
 
