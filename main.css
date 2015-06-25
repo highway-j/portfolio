@@ -37,36 +37,38 @@ body {
   width: 33.33%;
 }
 
-div.headshot {
-  background: url('images/JK_Headshot2.jpg');
-  background-size: cover;
-}
-
 .col-1-3 img{
   display: inline-block;
   width: 100%;
   height: auto;
 }
 
-h1 {
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+.headshot {
+  background: url('images/JK_Headshot2.jpg');
+  background-size: cover;
 }
 
-span.emphasis {
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  font-size: 1.4em;
-  line-height: 0.7em;
-  font-variant: small-caps;
-  margin-bottom: 30px;
-  color: black;
+h3{
+  text-align: center;
+  font-family: "Gentium Book Basic", Georgia, serif;
+  color: white;
+  font-size: 2em;
+  text-shadow: 1px 1px 1px #000;
 }
 
 p {
   font-size: 1.1em;
 }
 
-p.underText{
+ul li{
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  list-style: none;
+  line-height: 40px;
+  font-size: 1.5em;
+}
+
+.underText {
   font-size: 1.25em;
   color: white;
   display: inline-block;
@@ -86,14 +88,26 @@ a i:hover {
   color: #4078c0;
 }
 
-ul.icons i {
+.icons i {
   font-size: 80px!important;
   text-shadow: black 2px 2px 2px;
 }
 
-/* Header */
-.masthead{
+.masthead, .mastfooter {
+  background-image: url("http://i.imgur.com/96p6fTD.jpg");
+}
+
+.masthead {
+  padding: 6em 0;
+  background-repeat: repeat;
+  border-top: solid 1em #000;
   text-align: center;
+}
+
+.mastfooter {
+  padding: 10em 0;
+  background-repeat: repeat;
+  border-top: solid 1em #000;
 }
 
 .masthead img {
@@ -111,20 +125,6 @@ ul.icons i {
   font-size: 6em;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-}
-
-.masthead {
-  background-image: url("http://i.imgur.com/96p6fTD.jpg");
-  padding: 6em 0;
-  background-repeat: repeat;
-  border-top: solid 1em #000;
-}
-
-.mastfooter {
-  background-image: url("http://i.imgur.com/96p6fTD.jpg");
-  padding: 10em 0;
-  background-repeat: repeat;
-  border-top: solid 1em #000;
 }
 
 ul.evenSpacing li {
@@ -147,14 +147,6 @@ ul.evenSpacing li p{
   background-attachment: fixed;
   text-align: center;
   border-bottom: 1em black solid;
-}
-
-.quote h3{
-  text-align: center;
-  font-family: "Gentium Book Basic", Georgia, serif;
-  color: white;
-  font-size: 2em;
-  text-shadow: 1px 1px 1px #000;
 }
 
 .portfolio {
@@ -185,9 +177,7 @@ ul.evenSpacing li p{
 }
 
 .portfolio li {
-  display: inline-block;
-  padding: 0 0.5em 0 0.5em;
-  width: 50%;
+  padding: 0 0.25em 0 0.25em;
 }
 
 .portfolio li img {
@@ -196,46 +186,22 @@ ul.evenSpacing li p{
   height: 100%;
 }
 
-.mywork {
-  display: flex;
-}
-
 .mastfooter-intro {
   color: white;
   text-align: center;
   padding: 0.1em;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  font-size: 3em;
+  font-size: 4em;
   line-height: 0.8em;
   font-variant: small-caps;
   text-shadow: black 2px 2px 2px;
-}
-
-.mastfooter-links > li, .mastfooter p{
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.mastfooter-links {
-  text-align: center;
-}
-
-.mastfooter-links > li{
-  display: inline-block;
-  padding: 0 0.5em 0 0.5em;
-}
-
-.more h2 {
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.2em;
-  font-weight: bold;
 }
 
 .content ul {
   text-align: center;
   padding: 0;
   width: 100%;
-  
 }
 
 .content ul li {
@@ -264,14 +230,6 @@ ul.evenSpacing li p{
 }
 
 /* Skills */
-ul li{
-  font-family: "Oswald", sans-serif;
-  text-transform: uppercase;
-  list-style: none;
-  line-height: 40px;
-  font-size: 1.5em;
-}
-
 ul.skills {
   margin-top: 30px;
 }
@@ -311,19 +269,6 @@ ul.skills li a:active {
   width: 100%;
 }
 
-.summary h1 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
-  font-size: 1.8em;
-  line-height: 0;
-  font-variant: small-caps;
-}
-
-.summary p {
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  letter-spacing: 0;
-}
-
 .skillsImage {
   /* border: 1px solid black; */
   width: 32%;
@@ -340,12 +285,6 @@ ul.skills li a:active {
 
 .skillsDetails li {
   font-size: 1.28em;
-}
-
-.skillsDetails p{
-  font-family: "Oswald", sans-serif;
-  font-size: 1.25em;
-  opacity: 0;
 }
 
 /* Portfolio */
@@ -374,7 +313,7 @@ ul.skills li a:active {
 
 #display-zone2 {
     opacity: 0;
-    height: 0px;
+    height: 0;
     -webkit-transition: 1.5s;
     transition: 0.6s;
 }
@@ -397,7 +336,7 @@ ul.skills li a:active {
     margin-top: 50px;
 }
 
-li.span3 {
+.span3 {
   width: 23.6%;
   display: inline-block;
 }
@@ -407,14 +346,6 @@ img { max-width:100%; }
 a.carousel-control {
   top: 96%;
 }
-
-/* .carousel-control.left {
-    margin-left: 40px;
-}
-
-.carousel-control.right {
-    margin-right: 66px;
-} */
 
 .display-zone3 {
     display:block!important;
