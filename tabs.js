@@ -4,7 +4,7 @@ $(document).ready(function(){
 function skills(image, details) {
 	this.image = image;
 	this.details = details;
-};
+}
 
 // Create objects here
 var coding = new skills('images/coding2.png', "<ul class='overview coding'><li>I love coding, but I'm passionate about <strong>BRANDING</strong></li><li>I learned because it's all about <strong>STARTUPS</strong></li><li>But the best part is that the possibilites are <strong>ENDLESS</strong></li><li>This is a showcase of what I can do with <strong>HTML & CSS</strong></li><li>Check out my projects below to see some <strong>JQUERY</strong></li><li>But I know you all came to see the <strong>JAVASCRIPT</strong></li></ul>");
@@ -13,22 +13,30 @@ var vision = new skills('images/vision.png', "<ul class='overview vision'><li>I'
 var overview = new skills('images/cp_logo_lrg.png', '<ul class="overview overviewPage"><li>My name is <strong>JONATHAN KIM</strong></li><li>I am a <strong>FRONT END WEB DEVELOPER</strong></li><li>Born and raised in the <strong>BAY AREA</strong></li><li>But now I live in <strong>ORANGE COUNTY</strong></li><li>I graduated from Cal Poly with a degree in <strong>BUSINESS</strong></li><li>With a focus in <strong>ENTREPRENEURSHIP</strong></li></ul>');
 
 $('.overviewLink a').on('click', function(){
+	$('a').removeClass('active');
+	$(this).addClass('active');
 	$('div.skillsDetails').html(overview.details);
 	$('div.skillsImage img').attr('src', overview.image);
 	$('.headshot img').css({'opacity': '1', 'transition': '1s'});
 });
 
 $('.codingLink a').on('click', function(){
+	$('a').removeClass('active');
+	$(this).addClass('active');
 	$('div.skillsDetails').html(coding.details);
 	$('div.skillsImage img').attr('src', coding.image);
 });
 
 $('.hobbiesLink a').on('click', function(){
+	$('a').removeClass('active');
+	$(this).addClass('active');
 	$('div.skillsDetails').html(hobbies.details);
 	$('div.skillsImage img').attr('src', hobbies.image);
 });
 
 $('.visionLink a').on('click', function(){
+	$('a').removeClass('active');
+	$(this).addClass('active');
 	$('div.skillsDetails').html(vision.details);
 	$('div.skillsImage img').attr('src', vision.image);
 	$('.headshot img').css({'opacity': '0', 'transition': '1s'});

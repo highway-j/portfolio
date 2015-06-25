@@ -257,7 +257,7 @@ ul.skills li a:hover {
   background-color: #337ab7;
 }
 
-ul.skills li a:active {
+ul.skills li a.active {
   text-decoration: none;
   color: white;
   border: 2px solid #337ab7;
@@ -307,8 +307,15 @@ ul.skills li a:active {
 }
 
 .thumbnail {
-    max-width: 360px;
-    max-height: 240px;
+  max-width: 360px;
+  max-height: 240px;
+  border: 2px solid white!important;
+  padding: 0!important;
+  border-radius: none!important;
+}
+
+.thumbnail:hover {
+  border: 2px solid black!important;
 }
 
 #display-zone2 {
@@ -405,11 +412,6 @@ a.carousel-control {
         height: 30px;
         width: 15px;
         }
-
-.thumbnail {
-  border: none!important;
-  padding: 0!important;
-}
 
 /* MOBILE */
 @media (max-width: 767px) {
