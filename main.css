@@ -273,6 +273,7 @@ ul.skills li a.active {
   /* border: 1px solid black; */
   width: 32%;
   float: left;
+  margin-left: 40px;
   text-align: center;
   top: 55%;
 }
@@ -473,17 +474,6 @@ a.carousel-control {
     line-height: 2.5em;
   }
 
-  .skillsDetails{
-    margin-top: -25px;
-    width: 31%;
-  }
-
-  .skillsImage {
-    margin-top: -25px;
-    width: 15%;
-    margin-left: 40px;
-  }
-
   .col-2-3 li{
     font-size: 1.1em;
   }
@@ -497,10 +487,30 @@ a.carousel-control {
   }
 }
 
+  @media only screen and (max-width: 1295px) and (min-width: 1055px) {
+  .skillsDetails{
+    width: 100%;
+    text-align: center;
+  }
+
+  .skillsImage {
+    margin: -60px auto 0 auto;
+    width: 60%;
+    float: none;
+  }
+
+  .skillsImage img {
+    padding-left: 40px;
+  }
+
+  .summary {
+    width: 50%;
+  }
+  }
+
  @media only screen and (max-width: 1055px) {
   .skillsImage img{
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   }
 
 
@@ -530,14 +540,13 @@ a.carousel-control {
   .skillsDetails {
     width: 45%;
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
 
   .skillsImage {
     width: 45%;
   }
 }
-
 
 @media only screen and (max-width: 595px) {
   .masthead-heading {
@@ -548,8 +557,7 @@ a.carousel-control {
   }
 
   .skillsImage img {
-    margin-top: 10px;
-    padding: 20px 0 20px 0;
+    padding: 0 0 0 25px;
   }
 
   .portfolio h1 {
@@ -562,16 +570,16 @@ a.carousel-control {
 
   .skillsImage {
     height: auto;
-    width: 100%;
-    margin-bottom: -25px;
-    margin-left: 0;
+    width: 50%;
+    float: none;
+    margin: -25px auto -25px auto;
   }
 
   .skillsDetails {
     width: 100%;
     text-align:center;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
   ul.skills {
@@ -583,7 +591,7 @@ a.carousel-control {
   }
 
   .skillsDetails ul li {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   ul.overview {
