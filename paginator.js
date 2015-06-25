@@ -2,10 +2,16 @@ $(document).ready(function(){
 
 var data = [
 	{
-		name: "SHOPPING LIST",
-		description: "Objective: Create a shopping list app where users can enter items they need to purchase, check and uncheck items on the list, and remove items from the list permanently.",
-		url: "images/shopping_list.png",
-		href: "http://highway-j.github.io/shopping-list/"
+		name: "HOT OR COLD GAME",
+		description: 'Objective: Javascript should start a new game when the page loads. Users must be able to start a new game when they click the "NEW GAME" button. When the new game starts, a random number between 1 and 100 will be generated that the user has to guess. The game must give feedback based on the last guess, record the previous guesses in a list, and tell the user when they have guessed correctly.',
+		url: "images/hot_or_cold.png",
+		href: "http://highway-j.github.io/hot-or-cold/"
+	},
+	{
+		name: "CAMBOMOVEMENT",
+		description: "Freelance website designed for the Cambomovement. This site was built on Wordpress, custom work included graphics and CSS.",
+		url: "images/cambomovement.png",
+		href: "http://www.cambomovement.com"
 	},
 	{
 		name: "QUIZ APP",
@@ -14,16 +20,10 @@ var data = [
 		href: "http://highway-j.github.io/quizapp/"
 	},
 	{
-		name: "HOT OR COLD GAME",
-		description: 'Objective: Javascript should start a new game when the page loads. Users must be able to start a new game when they click the "NEW GAME" button. When the new game starts, a random number between 1 and 100 will be generated that the user has to guess. The game must give feedback based on the last guess, record the previous guesses in a list, and tell the user when they have guessed correctly.',
-		url: "images/hot_or_cold.png",
-		href: "http://highway-j.github.io/hot-or-cold/"
-	},
-	{
-		name: "STREET FIGHTER JQUERY",
-		description: "Objective: The purpose of this project was to learn the basics of jQuery and have fun creating user interactions and animations.",
-		url: "images/streetfighter.png",
-		href: "http://highway-j.github.io/jquery-streetfigher/main.html"
+		name: "SHOPPING LIST",
+		description: "Objective: Create a shopping list app where users can enter items they need to purchase, check and uncheck items on the list, and remove items from the list permanently.",
+		url: "images/shopping_list.png",
+		href: "http://highway-j.github.io/shopping-list"
 	}
 ]	
 
