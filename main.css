@@ -105,10 +105,11 @@ a i:hover {
 }
 
 .mastfooter {
-  padding: 10em 0;
+  padding: 1.5em 0;
   background-repeat: repeat;
   border-top: solid 1em #000;
   border-bottom: solid 1em #000;
+  text-align: center;
 }
 
 .masthead img {

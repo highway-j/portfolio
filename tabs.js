@@ -56,5 +56,9 @@ $("#downWeGo").click(function(){
 }
 });
 
+$('.fa-paper-plane').click(function(){
+	scrollToAnchor('wayUp');
+});
+
 
 });
